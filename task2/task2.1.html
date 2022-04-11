@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="outer">
+		<center>
+			<h1>String methods</h1>
+			<h3>string 1: She Sells Sea Shells <br><br>string 2: in the sea shore</h3>
+			<br>
+		</center>
+		<div class="inner" style="padding: 50px; font-size: 20px;">
+			<button type="button" onclick="length()">Length</button>
+			<p id="len"></p>
+			<button type="button" onclick="uppercase()">Uppercase</button>
+			<p id="upper"></p>
+			<button type="button" onclick="lowercase()">Lowercase</button>
+			<p id="lower"></p>
+			<button type="button" onclick="concat()">Concat</button>
+			<p id="conc"></p>
+			<button type="button" onclick="replace()">Replace Sea with sho</button>
+			<p id="rep"></p>
+			<button type="button" onclick="slice()">Slice</button>
+			<p id="Slice"></p>
+			<button type="button" onclick="split()">Split</button>
+			<p id="Split"></p>
+			<button type="button" onclick="substring()">Substring</button>
+			<p id="sub"></p>
+
+
+
+			<script >
+				s1="She Sells Sea Shells ";
+				s2="in the sea shore. ";
+
+				function length() {
+					document.getElementById('len').innerHTML=s1.length;
+				}
+
+				function uppercase() {
+					document.getElementById('upper').innerHTML=s1.toUpperCase();
+				}
+
+				function lowercase() {
+					document.getElementById('lower').innerHTML=s1.toLowerCase();
+				}
+
+				function concat() {
+					document.getElementById('conc').innerHTML=s1.concat(" ",s2);
+				}
+
+				function replace() {
+					document.getElementById('rep').innerHTML=s1.replace("Sea","sho");
+				}
+
+				function slice() {
+					document.getElementById('Slice').innerHTML=s1.slice(0,4);
+				}
+
+				function split() {
+					document.getElementById('Split').innerHTML=s1.split(' ');
+				}
+
+				function substring() {
+					document.getElementById('sub').innerHTML=s1.substring(4,13);
+				}
+			</script>
+		</div>
+	</div>
+
+
+</body>
+</html>

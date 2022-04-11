@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.inner{
+			padding-left: 200px; 
+			font-size: 20px;
+		}
+		h4{
+			display: inline-block;
+		}
+		button {
+			display: inline-block;
+		}
+		.line1 p{
+			display: inline-block;
+			padding-left: 10px;
+			padding-right: 100px;
+		}
+		.line2 p{
+			display: inline-block;
+			padding-left: 10px;
+			padding-right: 100px;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<center>
+			<h1>Arithmetic opreations</h1>
+			<h2>a = 24 <br><br>b = 12 </h2>
+			<br>
+		</center>
+		
+		<div class="inner">
+			<div class="line1">
+			<h4>a + b</h4>
+			<button type="button" onclick="addition()">Equals</button>
+			<p id="add"></p>
+			<h4>a - b</h4>
+			<button type="button" onclick="subtract()">Equals</button>
+			<p id="sub"></p>
+			<h4>a * b</h4>
+			<button type="button" onclick="multiply()">Equals</button>
+			<p id="mul"></p>
+		</div>
+		<div class="line1">
+			<h4>a / b</h4>
+			<button type="button" onclick="divide()">Equals</button>
+			<p id="div"></p>
+			<h4>a % b</h4>
+			<button type="button" onclick="mod()">Equals</button>
+			<p id="mods"></p>
+			<h4>a ^ b</h4>
+			<button type="button" onclick="power()">Equals</button>
+			<p id="pow"></p>
+		</div>
+		<div class="line1">
+			<h4>a++</h4>
+			<button type="button" onclick="increment()">Equals</button>
+			<p id="inc"></p>
+			<h4>b--</h4>
+			<button type="button" onclick="decrement()">Equals</button>
+			<p id="dec"></p>
+		</div>
+
+			<script >
+				let s1=24,s2=12,s3;
+				
+
+				function addition() {
+					s3=s1+s2;
+					document.getElementById('add').innerHTML=s3;
+				}
+
+				function subtract() {
+					s3=s1-s2;
+					document.getElementById('sub').innerHTML=s3;
+				}
+
+				function multiply() {
+					s3=s1*s2;
+					document.getElementById('mul').innerHTML=s3;
+				}
+
+				function divide() {
+					s3=s1/s2;
+					document.getElementById('div').innerHTML=s3;
+				}
+
+				function mod() {
+					s3=s1%s2;
+					document.getElementById('mods').innerHTML=s3;
+				}
+
+				function power() {
+					s3=s1**s2;
+					document.getElementById('pow').innerHTML=s3;
+				}
+
+				function increment() {
+					s3=s1+1;
+					document.getElementById('inc').innerHTML=s3;
+				}
+
+				function decrement() {
+					s3=s2-1;
+					document.getElementById('dec').innerHTML=s3;
+				}
+			</script>
+		</div>
+	</div>
+
+
+</body>
+</html>
